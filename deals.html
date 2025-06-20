@@ -4,35 +4,81 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title contenteditable="true">BuMU Links - Affordable Deals for Everyone</title>
+  <title>BuMU Deals - Flipkart Style</title>
   <style>
-    body { font-family: Arial; margin: 0; padding: 0; background: #f9f9f9; }
-    header { background: #ff7f50; color: white; padding: 1rem; text-align: center; }
-    nav { background: #333; display: flex; justify-content: center; }
-    nav a { color: white; padding: 1rem; text-decoration: none; }
-    nav a:hover { background: #555; }
-    .container { padding: 2rem; max-width: 1000px; margin: auto; }
-    .card { background: white; padding: 1rem; margin: 1rem 0; border-radius: 8px; border: 1px solid #ddd; }
-    footer { text-align: center; background: #eee; padding: 1rem; }
-    [contenteditable] { outline: 1px dashed #ccc; padding: 2px; }
+    body { margin: 0; font-family: Arial, sans-serif; background-color: #f1f3f6; }
+    header { background-color: #2874f0; color: white; padding: 1rem; text-align: center; }
+    .search-bar { display: flex; justify-content: center; padding: 1rem; background: white; }
+    .search-bar input { width: 60%; padding: 0.5rem; font-size: 1rem; border: 1px solid #ccc; border-radius: 5px 0 0 5px; }
+    .search-bar button { padding: 0.5rem 1rem; background-color: #2874f0; color: white; border: none; border-radius: 0 5px 5px 0; cursor: pointer; }
+    .layout { display: flex; max-width: 1200px; margin: auto; padding: 1rem; }
+    .sidebar { width: 20%; background: white; padding: 1rem; border-radius: 5px; margin-right: 1rem; }
+    .products { width: 80%; display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1rem; }
+    .product-card { background: white; border-radius: 5px; padding: 1rem; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+    .product-card img { max-width: 100%; height: auto; }
+    .product-card h3 { font-size: 1rem; margin: 0.5rem 0; }
+    .product-card p { font-size: 0.9rem; color: #555; }
+    .product-card a { display: inline-block; margin-top: 0.5rem; background-color: #2874f0; color: white; padding: 0.5rem 1rem; border-radius: 4px; text-decoration: none; }
+    footer { text-align: center; padding: 1rem; background: #ddd; margin-top: 2rem; }
   </style>
 </head>
 <body>
-  <header><h1 contenteditable="true">BuMU Links</h1><p contenteditable="true">Affordable Deals for Middle-Class Families</p></header>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="deals.html">Deals</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-  <div class="container">
-    <h2 contenteditable="true">Deals Page</h2>
-    <div class="card">
-      <h3 contenteditable="true">Bluetooth Earbuds</h3>
-      <p contenteditable="true">Budget wireless earbuds with great sound.</p>
-      <a href="#" contenteditable="true">View All Deals</a>
-    </div>
+
+  <header>
+    <h1>BuMU Deals</h1>
+  </header>
+
+  <div class="search-bar">
+    <input type="text" placeholder="Search for products..." />
+    <button>Search</button>
   </div>
-  <footer><p contenteditable="true">© 2025 BuMU Links. Helping you shop smart.</p></footer>
+
+  <div class="layout">
+    <aside class="sidebar">
+      <h3>Categories</h3>
+      <ul style="list-style: none; padding: 0;">
+        <li><input type="checkbox" checked /> Electronics</li>
+        <li><input type="checkbox" checked /> Fashion</li>
+        <li><input type="checkbox" checked /> Kitchen</li>
+        <li><input type="checkbox" checked /> Beauty</li>
+        <li><input type="checkbox" checked /> Toys</li>
+      </ul>
+    </aside>
+
+    <main class="products">
+      <div class="product-card">
+        <img src="https://via.placeholder.com/150" alt="Product 1">
+        <h3>Wireless Earbuds</h3>
+        <p>Great sound at an affordable price.</p>
+        <a href="https://www.amazon.in/" target="_blank">Buy Now</a>
+      </div>
+
+      <div class="product-card">
+        <img src="https://via.placeholder.com/150" alt="Product 2">
+        <h3>Smart Watch</h3>
+        <p>Track fitness and notifications in style.</p>
+        <a href="https://www.flipkart.com/" target="_blank">Buy Now</a>
+      </div>
+
+      <div class="product-card">
+        <img src="https://via.placeholder.com/150" alt="Product 3">
+        <h3>Non-stick Pan</h3>
+        <p>Must-have for any modern kitchen.</p>
+        <a href="https://www.meesho.com/" target="_blank">Buy Now</a>
+      </div>
+
+      <div class="product-card">
+        <img src="https://via.placeholder.com/150" alt="Product 4">
+        <h3>Kids' Toy Set</h3>
+        <p>Fun and safe for children aged 3+.</p>
+        <a href="https://www.amazon.in/" target="_blank">Buy Now</a>
+      </div>
+    </main>
+  </div>
+
+  <footer>
+    <p>© 2025 BuMU Links. Flipkart-style Deals Page.</p>
+  </footer>
+
 </body>
 </html>
